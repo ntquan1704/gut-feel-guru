@@ -17,22 +17,22 @@ export const HeroSection = () => {
       
       <div className="container relative z-10 mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight text-foreground">
             What is your{" "}
-            <span className="bg-gradient-warm bg-clip-text text-transparent">
+            <span className="underline-emphasis text-emphasis font-extrabold">
               Digestive Personality
             </span>
             ?
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto font-light">
             Your gut feelings say more about your life than you think.
           </p>
           
           <Button 
             onClick={scrollToQuiz}
             size="lg" 
-            className="text-lg px-8 py-6 shadow-soft hover:shadow-lg transition-all duration-300 hover:scale-105"
+            className="text-lg px-8 py-6 shadow-soft hover:shadow-lg transition-all duration-300 hover:scale-105 bg-emphasis hover:bg-emphasis/90"
           >
             Start the Quiz
           </Button>

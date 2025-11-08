@@ -55,6 +55,10 @@ export default {
           DEFAULT: "hsl(var(--trust))",
           foreground: "hsl(var(--trust-foreground))",
         },
+        emphasis: {
+          DEFAULT: "hsl(var(--emphasis))",
+          foreground: "hsl(var(--emphasis-foreground))",
+        },
       },
       backgroundImage: {
         'gradient-warm': 'var(--gradient-warm)',
