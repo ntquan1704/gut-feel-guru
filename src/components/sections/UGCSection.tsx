@@ -1,43 +1,55 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MessageSquare, Heart, Users } from "lucide-react";
+import momMeetup from "@/assets/reels/mom-meetup.jpg";
+import wellnessWorkshop from "@/assets/reels/wellness-workshop.jpg";
+import supportGroup from "@/assets/reels/support-group.jpg";
+import healthyLunch from "@/assets/reels/healthy-lunch.jpg";
+import morningHabit from "@/assets/reels/morning-habit.jpg";
+import digestiveComfort from "@/assets/reels/digestive-comfort.jpg";
 
 const reelFrames = [
   {
     title: "Mom Meetup - District 7",
     community: "Comfort Circle",
     likes: "124",
-    type: "offline event"
+    type: "offline event",
+    image: momMeetup
   },
   {
     title: "Wellness Workshop",
     community: "Comfort Circle",
     likes: "89",
-    type: "offline event"
+    type: "offline event",
+    image: wellnessWorkshop
   },
   {
     title: "Postpartum Support Group",
     community: "Comfort Circle",
     likes: "156",
-    type: "community"
+    type: "community",
+    image: supportGroup
   },
   {
     title: "Healthy Lunch Tips",
     community: "Comfort Circle",
     likes: "203",
-    type: "community"
+    type: "community",
+    image: healthyLunch
   },
   {
     title: "Morning Habit Challenge",
     community: "Comfort Circle",
     likes: "178",
-    type: "offline event"
+    type: "offline event",
+    image: morningHabit
   },
   {
     title: "Digestive Comfort Circle",
     community: "Comfort Circle",
     likes: "145",
-    type: "community"
+    type: "community",
+    image: digestiveComfort
   }
 ];
 
@@ -68,7 +80,12 @@ export const UGCSection = () => {
                 key={index} 
                 className="relative aspect-[9/16] overflow-hidden group cursor-pointer hover:shadow-card transition-all duration-300"
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-wellness/20 via-primary/30 to-wellness/40 flex flex-col justify-between p-4">
+                <img 
+                  src={frame.image} 
+                  alt={frame.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/60 flex flex-col justify-between p-4">
                   <div className="flex justify-between items-start">
                     <div className="bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium">
                       {frame.type === "offline event" ? "📍 Event" : "💬 Community"}
