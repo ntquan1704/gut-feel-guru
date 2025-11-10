@@ -20,7 +20,7 @@ export const ExpertSection = () => {
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <div className="inline-flex items-center gap-2 bg-trust/10 text-trust px-4 py-2 rounded-full w-fit mb-6">
                   <Sparkles className="w-4 h-4" />
-                  <span className="text-sm font-medium">Expert Insight</span>
+                  <span className="text-sm font-medium">HCP & Influencer Insight</span>
                 </div>
                 
                 <p className="text-lg md:text-xl leading-relaxed mb-6">
